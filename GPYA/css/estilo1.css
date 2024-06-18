@@ -1,0 +1,107 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');   
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #152B50; 
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff; /* Color entre morado y blanco */
+      font-size: 20px; /* Tamaño de letra */
+    }
+
+    .logo {
+      max-width: 200px; /* Aumenta el tamaño del logo */
+      height: auto;
+      margin-bottom: 20px; /* Añade espacio entre el logo y el texto */
+    }
+
+    .texto {
+      text-align: justify;
+    }
+
+    .texto1 h1{
+        margin-right: 105px;
+        margin-bottom: 0;
+        margin-left: 5;
+        font-family: 'IBM Plex Sans', sans-serif; 
+        color: #fff;
+        line-height: 0.8;
+    }
+
+    .texto2 h1{
+      margin-right: 10px;
+      margin-left: 5;
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #7C83BA;
+      margin-bottom: 10px; /* Añade espacio entre el párrafo y la nueva sección */
+      line-height: 0.8;
+    }
+
+    .imagen-grande {
+      width: 72%; /* Cambia el ancho de la imagen */
+      height: 100vh; /* Cambia la altura del contenedor de la imagen */
+      overflow: hidden; /* Oculta las partes de la imagen que se salen del contenedor */
+    }
+
+    .imagen-grande img {
+      width: 100%;
+      height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+      object-fit: cover;
+      border: none; /* Asegura que no haya borde */
+      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .info {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+    }
+
+    .info p {
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 0;
+      margin-left: 45px;
+      margin-right: 22%;
+      color: #fff; 
+      text-align: justify;
+      font-size: 12px;
+    }
+
+    .info button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      width: 450px;
+      background-color: #3F418C;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px; /* Añade esquinas redondeadas al botón */
+      animation: pulse 0.5s infinite alternate; /* Inicia la animación automáticamente */
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1); /* Tamaño normal del botón */
+      }
+      100% {
+        transform: scale(1.1); /* Tamaño aumentado del botón */
+      }
+    }
+  

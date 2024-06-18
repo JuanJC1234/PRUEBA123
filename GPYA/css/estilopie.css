@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+
+.footer {
+  background-color: #3F418C;
+  padding: 10px 20px; /* Ajustar padding para reducir el alto y pegar al borde izquierdo */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  height: 140px; /* Reducir tamaño del logo */
+  margin-left: -120px;
+  margin-right: 80px; /* Reducir espacio a la derecha del logo */
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  margin-right: 55px; /* Reducir margen entre los items */
+}
+
+.footer-item img {
+  height: 55px; /* Reducir tamaño de los iconos */
+  margin-right: 2px; /* Reducir espacio a la derecha de los iconos */
+}
+
+.footer-item span {
+  font-size: 12px; /* Reducir tamaño del texto */
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.footer-table {
+  margin-left: auto;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.footer-table table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-table th,
+.footer-table td {
+  border: none;
+  padding: 8px 16px; /* Ajustar padding para aumentar el espacio entre textos */
+  text-align: left;
+  font-size: 11px;
+  color: #fff;
+}
+

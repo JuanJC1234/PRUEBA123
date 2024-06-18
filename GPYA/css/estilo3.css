@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Estilo para forzar una nueva página en la visualización */
+.page-break {
+    display: flex;
+    height: 37.9vh;
+    margin: 1px;
+}
+
+/* Estilo para el nuevo contenedor de la nueva página */
+.new-page {
+    page-break-before: always; /* Fuerza un salto de página antes de este contenedor */
+    width: 100%;
+    padding: 0;
+    margin-top: -27.02vh;
+    height: 108vh;
+    box-sizing: border-box;
+    display: flex;
+    position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+.new-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 111vh; /* Establece la altura fija para cubrir toda la página */
+    background-color: #fff;
+    z-index: -1; /* Asegura que el cuadro blanco esté detrás del contenido */
+}
+
+/* Contenedor flexible para dividir el contenido */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 120%; /* Abarcar todo el alto de la página */
+    margin-right: 2%;
+}
+
+/* Contenido izquierdo - imagen */
+.left-content {
+    width: 50%; /* Ocupar la mitad de la página */
+    height: 101vh; /* Modificar alto de la imagen grande */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.left-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-left: -50px;
+}
+
+/* Contenido derecho - cuadrícula */
+.right-content {
+    width: 50%; /* Ocupar la mitad de la página */
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Alinear al centro verticalmente */
+    margin-top: -29vh; /* Ajustar el margen superior para los cuadros */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px;
+    width: 100%;
+}
+
+.grid-item {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-left: 55px;
+    margin-right: 40px;
+    height: calc(98% - 80px); /* Ajuste de altura para ocupar espacio disponible */
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid #152b50; /* Borde azul oscuro */
+    box-shadow: 15px 15px 20px #152b50; /* Sombra más oscura */
+    color: #152b50;
+    display: flex; /* Agregar flexbox para centrar contenido */
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilos de los textos */
+.grid-item h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.1em; /* Reducir el tamaño de la letra */
+    margin: 10px 0; /* Espacio entre elementos */
+}
+
+.grid-item p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.78em; /* Reducir el tamaño de la letra */
+    margin: 10px 0; /* Espacio entre elementos */
+}

@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .new-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .new-section .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px; /* Aumentar el espacio entre las columnas */
+    max-width: 1400px; /* Aumentar el ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente y agregar espacio en los laterales */
+  }
+  
+  .new-section .content .cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo {
+    width: auto; /* Ajusta el tamaño de la imagen según lo necesites */
+    text-align: center;
+    height: 150px; /* Mantiene la proporción de la imagen */
+  }
+  
+  .new-section .content .cell h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #40438f;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+  }
+  
+  .new-section .content .cell .line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 115%; /* Ajustar la posición a la mitad del contenedor */
+    width: 1px;
+    background-color: #3F418C;
+  }
+  
+  .new-section .content .cell p {
+    color: #8183c7;
+    font-family: 'IBM Plex Sans', sans-serif;
+    top: 10px;
+    margin: 20px 50px; /* Ajustar el espacio entre los párrafos */
+    text-align: center; /* Alinear el texto al centro */
+  }
+  
+  .bottom-image {
+    margin-top: 40px; /* Separación entre el contenido y la imagen */
+    text-align: center;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20vh; /* Establece una altura fija para el contenedor */
+  }
+  
+  .bottom-image img {
+    width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la ventana */
+    height: auto;
+    max-height: none;
+    object-fit: cover;
+    position:static;
+    left:0;
+    right: 0;
+    margin: 0;
+    margin-left: -3.5vw;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }

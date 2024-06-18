@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/foto-gratis/persona-oficina-analizando-revisando-graficos-financieros_23-2150377141.jpg?t=st=1718523357~exp=1718526957~hmac=61181f38762e07955fab060066d095fab9c209ade93290e8b0e0606179a1edb6&w=740');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 8, 73, 0.5); /* Color morado con transparencia */
+    z-index: 1; /* Asegura que esté por encima del fondo pero debajo del contenido */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: 50px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 40px; /* Aumenta el padding para agrandar el cuadro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    width: 80vh; /* Aumenta el ancho del cuadro */
+    z-index: 2;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: justify;
+    color: #152B50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding-bottom: 12px;
+    font-size: 12px;
+}
+
+input[type="text"], input[type="password"] {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #152B50;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-cancel {
+    background-color: #7C83BA;
+    color: white;
+    margin-right: 30px;
+}
+
+.button-submit {
+    background-color: #3F418C;
+    width: 36vh;
+    color: white;
+}
+
+a {
+    color: #3F418C;
+    width: 30vh;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    top: -31.2vh; /* Ajuste para estar más arriba */
+    left: 185vh; /* Ajuste para estar más a la derecha */
+    z-index: 3;
+}
+
+.dropbtn {
+    background-color: #3F418C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #7C83BA;
+}

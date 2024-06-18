@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');   
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Evita la barra de desplazamiento vertical */
+}
+
+.container {
+    width: 100vw;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cuadro-azul {
+    position: absolute;
+    margin-left: 111vh;
+    width: 100vh; /* Ocupa la mitad de la anchura de la pantalla */
+    height: 120%; /* Altura completa del contenedor */
+    background-color: #152B50; /* Color azul de fondo */
+    z-index: 0; /* Asegura que esté detrás del cuadro principal */
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 10% 100%);
+}
+
+.box {
+    width: 500px; /* Ancho del cuadro */
+    height: 500px; /* Alto del cuadro */
+    background-color: rgba(255, 255, 255, 0.9); /* Color blanco con opacidad */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombras */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.box h2 {
+    color: #3F418C;
+    font-weight: bold; /* Hace que el texto dentro de h1 sea negrita */
+    margin-bottom: 10px;
+}
+
+.box button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3F418C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.box p {
+    color: #8334ce;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 13px; /* Cambia el tamaño del texto según tus necesidades */
+    margin-bottom: 20px;
+
+}
+
+.box img {
+    width: 45vh; /* Ancho del logo */
+    height: auto; /* El alto se ajustará automáticamente según el ancho */
+    max-width: 100%; /* Asegura que el ancho máximo sea el especificado */
+    margin: 0 auto; /* Centrar el logo */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    top: 15vh; /* Ajuste para estar más arriba */
+    left: 185vh; /* Ajuste para estar más a la derecha */
+    z-index: 2;
+}
+
+.dropbtn {
+    background-color: #3F418C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #7C83BA;
+}
